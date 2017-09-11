@@ -1,0 +1,7 @@
+C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer.Transports\bin\Debug\ContactFormEmailer.Transports.dll
+C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer.Transports\bin\Debug\ContactFormEmailer.Transports.pdb
+C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer.Transports\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer.Transports\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer.Transports\obj\Debug\ContactFormEmailer.Transports.csprojResolveAssemblyReference.cache
+C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer.Transports\obj\Debug\ContactFormEmailer.Transports.dll
+C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer.Transports\obj\Debug\ContactFormEmailer.Transports.pdb

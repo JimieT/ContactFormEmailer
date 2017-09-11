@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(ContactFormEmailer.Startup))]
-namespace ContactFormEmailer
+[assembly: OwinStartupAttribute(typeof(ContactFormEmailer.Web.Startup))]
+namespace ContactFormEmailer.Web
 {
     public partial class Startup
     {

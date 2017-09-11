@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace ContactFormEmailer.Models
+namespace ContactFormEmailer.Web.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
