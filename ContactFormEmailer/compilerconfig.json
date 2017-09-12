@@ -1,0 +1,54 @@
+﻿[
+  {
+    "outputFile": "Content/Styles/_main.css",
+    "inputFile": "Content/Styles/_main.less"
+  },
+  {
+    "outputFile": "Content/Styles/_bootstrap.css",
+    "inputFile": "Content/Styles/_bootstrap.less"
+  },
+  {
+    "outputFile": "Content/Styles/_carousel.css",
+    "inputFile": "Content/Styles/_carousel.less"
+  },
+  {
+    "outputFile": "Content/Styles/_carriers.css",
+    "inputFile": "Content/Styles/_carriers.less"
+  },
+  {
+    "outputFile": "Content/Styles/_checkout.css",
+    "inputFile": "Content/Styles/_checkout.less"
+  },
+  {
+    "outputFile": "Content/Styles/_content-page.css",
+    "inputFile": "Content/Styles/_content-page.less"
+  },
+  {
+    "outputFile": "Content/Styles/_custom.css",
+    "inputFile": "Content/Styles/_custom.less"
+  },
+  {
+    "outputFile": "Content/Styles/_jquery-ui.css",
+    "inputFile": "Content/Styles/_jquery-ui.less"
+  },
+  {
+    "outputFile": "Content/Styles/_location.css",
+    "inputFile": "Content/Styles/_location.less"
+  },
+  {
+    "outputFile": "Content/Styles/_oem.css",
+    "inputFile": "Content/Styles/_oem.less"
+  },
+  {
+    "outputFile": "Content/Styles/_rate.css",
+    "inputFile": "Content/Styles/_rate.less"
+  },
+  {
+    "outputFile": "Content/Styles/_simple-slider-touch.css",
+    "inputFile": "Content/Styles/_simple-slider-touch.less"
+  },
+  {
+    "outputFile": "Content/Styles/styles.css",
+    "inputFile": "Content/Styles/styles.less"
+  }
+]

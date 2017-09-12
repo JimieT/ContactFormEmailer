@@ -210,12 +210,88 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
+    <Compile Include="Transports\Content.cs" />
+    <Compile Include="Transports\EmailInfo.cs" />
+    <Compile Include="Transports\Personalizations.cs" />
+    <Compile Include="Transports\SendGridRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Styles\styles.css" />
     <Content Include="Content\Styles\styles.min.css" />
+    <Content Include="Content\Styles\_bootstrap.css">
+      <DependentUpon>_bootstrap.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_bootstrap.min.css">
+      <DependentUpon>_bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_carousel.css">
+      <DependentUpon>_carousel.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_carousel.min.css">
+      <DependentUpon>_carousel.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_carriers.css">
+      <DependentUpon>_carriers.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_carriers.min.css">
+      <DependentUpon>_carriers.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_checkout.css">
+      <DependentUpon>_checkout.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_checkout.min.css">
+      <DependentUpon>_checkout.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_content-page.css">
+      <DependentUpon>_content-page.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_content-page.min.css">
+      <DependentUpon>_content-page.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_custom.css">
+      <DependentUpon>_custom.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_custom.min.css">
+      <DependentUpon>_custom.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_jquery-ui.css">
+      <DependentUpon>_jquery-ui.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_jquery-ui.min.css">
+      <DependentUpon>_jquery-ui.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_location.css">
+      <DependentUpon>_location.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_location.min.css">
+      <DependentUpon>_location.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_main.css">
+      <DependentUpon>_main.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_main.min.css">
+      <DependentUpon>_main.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_oem.css">
+      <DependentUpon>_oem.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_oem.min.css">
+      <DependentUpon>_oem.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_rate.css">
+      <DependentUpon>_rate.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_rate.min.css">
+      <DependentUpon>_rate.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_simple-slider-touch.css">
+      <DependentUpon>_simple-slider-touch.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_simple-slider-touch.min.css">
+      <DependentUpon>_simple-slider-touch.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -235,6 +311,12 @@
     <Content Include="Content\Styles\_simple-slider-touch.less" />
     <Content Include="Content\Styles\_carriers.less" />
     <Content Include="Content\Styles\_content-page.less" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <None Include="Properties\PublishProfiles\WebWerkz.pubxml" />
+    <None Include="Properties\PublishProfiles\WirelessWave.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -295,12 +377,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ContactFormEmailer.Transports\ContactFormEmailer.Transports.csproj">
-      <Project>{ca4cd1d0-d37a-4cf3-a2dd-c70d7181f43d}</Project>
-      <Name>ContactFormEmailer.Transports</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
