@@ -220,12 +220,27 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Styles\styles.css" />
+    <Content Include="Content\Styles\styles.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Styles\styles.less" />
+    <Content Include="Content\Styles\_bootstrap.less" />
+    <Content Include="Content\Styles\_carousel.less" />
+    <Content Include="Content\Styles\_checkout.less" />
+    <Content Include="Content\Styles\_custom.less" />
+    <Content Include="Content\Styles\_jquery-ui.less" />
+    <Content Include="Content\Styles\_location.less" />
+    <Content Include="Content\Styles\_main.less" />
+    <Content Include="Content\Styles\_oem.less" />
+    <Content Include="Content\Styles\_rate.less" />
+    <Content Include="Content\Styles\_simple-slider-touch.less" />
+    <Content Include="Content\Styles\_carriers.less" />
+    <Content Include="Content\Styles\_content-page.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

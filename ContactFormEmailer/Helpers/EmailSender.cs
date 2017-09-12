@@ -14,7 +14,11 @@ namespace ContactFormEmailer.Web.Helpers
 {
     public class EmailSender : IEmailSender
     {
-        private readonly string _sendGridApiKey = ConfigurationManager.AppSettings["SendGridAPIKey"];
+        private static readonly string SendGridApiKey = ConfigurationManager.AppSettings["SendGridAPIKey"];
+        private static readonly string SentFromEmailAddress = ConfigurationManager.AppSettings["SentFromEmailAddress"];
+        private static readonly string SentFromName = ConfigurationManager.AppSettings["SentFromName"];
+        private static readonly string SendToEmailAddress = ConfigurationManager.AppSettings["SendToEmailAddress"];
+        private static readonly string EmailSubject = ConfigurationManager.AppSettings["EmailSubject"];
         private IRestClient _restClient;
 
         public IRestClient RestClient
@@ -28,7 +32,7 @@ namespace ContactFormEmailer.Web.Helpers
             RestClient.BaseUrl = new Uri(ConfigurationManager.AppSettings["SendGridURI"]);
         }
 
-        public void Send(string sentFromEmailAddress, string sendToEmailAddress, string subject, ContactUsInfo contactInfo)
+        public void Send(ContactUsInfo contactInfo)
         {
             var request = new RestRequest
             {
@@ -37,7 +41,14 @@ namespace ContactFormEmailer.Web.Helpers
                 RequestFormat = DataFormat.Json,
                 JsonSerializer = new JsonNetSerializer()
             };
-            request.AddHeader("Authorization", $"Bearer {_sendGridApiKey}");
+            request.AddHeader("Authorization", $"Bearer {SendGridApiKey}");
+            var sendGridRequest = GenerateSendGridRequest(contactInfo);
+            request.AddBody(sendGridRequest);
+            var response = RestClient.Execute(request);
+        }
+
+        private static SendGridRequest GenerateSendGridRequest(ContactUsInfo contactInfo)
+        {
             var sendGridRequest = new SendGridRequest
             {
                 Content = new[]
@@ -58,8 +69,8 @@ namespace ContactFormEmailer.Web.Helpers
                 },
                 From = new EmailInfo
                 {
-                    Email = "do-not-reply@wirelesswave.ca",
-                    Name = "WIRELESSWAVE.ca"
+                    Email = SentFromEmailAddress,
+                    Name = SentFromName
                 },
                 Personalizations = new[] {
                     new Personalizations
@@ -68,21 +79,19 @@ namespace ContactFormEmailer.Web.Helpers
                         {
                             new EmailInfo
                             {
-                                Email = sendToEmailAddress
+                                Email = SendToEmailAddress
                             }
                         },
-                        Subject = subject
+                        Subject = EmailSubject
                     },
                 },
                 ReplyTo = new EmailInfo()
                 {
-                    Email = "do-not-reply@wirelesswave.ca"
+                    Email = SentFromEmailAddress
                 },
-                Subject = subject
+                Subject = EmailSubject
             };
-
-            request.AddBody(sendGridRequest);
-            var response = RestClient.Execute(request);
+            return sendGridRequest;
         }
     }
 }

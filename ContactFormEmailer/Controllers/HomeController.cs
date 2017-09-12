@@ -11,10 +11,6 @@ namespace ContactFormEmailer.Web.Controllers
 {
     public partial class HomeController : BaseController
     {
-        private readonly string _sentFromEmailAddress = ConfigurationManager.AppSettings["SentFromEmailAddress"];
-        private readonly string _sendToEmailAddress = ConfigurationManager.AppSettings["SendToEmailAddress"];
-        private readonly string _emailSubject = ConfigurationManager.AppSettings["EmailSubject"];
-
         public HomeController()
         {
         }
@@ -52,7 +48,7 @@ namespace ContactFormEmailer.Web.Controllers
                 if (ModelState.IsValid)
                 {
                     var emailSender = new EmailSender();
-                    emailSender.Send(_sentFromEmailAddress, _sendToEmailAddress, _emailSubject, viewModel.ContactUsInfo);
+                    emailSender.Send(viewModel.ContactUsInfo);
                     return View();
                 }
             }

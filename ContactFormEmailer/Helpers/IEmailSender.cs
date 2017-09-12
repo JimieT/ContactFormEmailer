@@ -8,6 +8,6 @@ namespace ContactFormEmailer.Web.Helpers
 {
     public interface IEmailSender
     {
-        void Send(string sentFromEmailAddress, string sendToEmailAddress, string subject, ContactUsInfo contactInfo);
+        void Send(ContactUsInfo contactInfo);
     }
 }

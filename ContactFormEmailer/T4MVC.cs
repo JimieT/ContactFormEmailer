@@ -99,6 +99,28 @@ namespace Links
         public static readonly string bootstrap_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/bootstrap.min.css") ? Url("bootstrap.min.css") : Url("bootstrap.css");
         public static readonly string bootstrap_min_css = Url("bootstrap.min.css");
         public static readonly string Site_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/Site.min.css") ? Url("Site.min.css") : Url("Site.css");
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class Styles {
+            public const string UrlPath = "~/Content/Styles";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(UrlPath); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
+            public static readonly string _bootstrap_less = Url("_bootstrap.less");
+            public static readonly string _carousel_less = Url("_carousel.less");
+            public static readonly string _carriers_less = Url("_carriers.less");
+            public static readonly string _checkout_less = Url("_checkout.less");
+            public static readonly string _content_page_less = Url("_content-page.less");
+            public static readonly string _custom_less = Url("_custom.less");
+            public static readonly string _jquery_ui_less = Url("_jquery-ui.less");
+            public static readonly string _location_less = Url("_location.less");
+            public static readonly string _main_less = Url("_main.less");
+            public static readonly string _oem_less = Url("_oem.less");
+            public static readonly string _rate_less = Url("_rate.less");
+            public static readonly string _simple_slider_touch_less = Url("_simple-slider-touch.less");
+            public static readonly string styles_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/styles.min.css") ? Url("styles.min.css") : Url("styles.css");
+            public static readonly string styles_less = Url("styles.less");
+            public static readonly string styles_min_css = Url("styles.min.css");
+        }
+    
     }
 
     
@@ -126,6 +148,14 @@ namespace Links
         }
         public static partial class Content 
         {
+            public static partial class Styles 
+            {
+                public static class Assets
+                {
+                    public const string styles_css = "~/Content/Styles/styles.css";
+                    public const string styles_min_css = "~/Content/Styles/styles.min.css";
+                }
+            }
             public static class Assets
             {
                 public const string bootstrap_css = "~/Content/bootstrap.css";
