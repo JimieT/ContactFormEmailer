@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ContactFormEmailer.Transports
+namespace ContactFormEmailer.Web.Transports
 {
     public class SendGridRequest
     {

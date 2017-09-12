@@ -1,4 +1,4 @@
-﻿namespace ContactFormEmailer.Transports
+﻿namespace ContactFormEmailer.Web.Transports
 {
     public class EmailInfo
     {

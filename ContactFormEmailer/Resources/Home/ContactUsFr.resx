@@ -163,7 +163,7 @@
     <value>Raison du message</value>
   </data>
   <data name="ReasonForMessageRequired" xml:space="preserve">
-    <value>Reason for message is a required field.</value>
+    <value>Raison du message est un champ obligatoire.</value>
   </data>
   <data name="RequiredFields" xml:space="preserve">
     <value>Les champs marqué d’une * sont obligatoires.</value>

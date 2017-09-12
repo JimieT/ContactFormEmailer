@@ -196,7 +196,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reason for message is a required field..
+        ///   Looks up a localized string similar to Raison du message est un champ obligatoire..
         /// </summary>
         public static string ReasonForMessageRequired {
             get {

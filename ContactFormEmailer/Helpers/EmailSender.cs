@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
 using System.Web;
-using ContactFormEmailer.Transports;
+using ContactFormEmailer.Web.Transports;
 using ContactFormEmailer.Web.Helpers.Serializers;
 using ContactFormEmailer.Web.Models;
 using RestSharp;
