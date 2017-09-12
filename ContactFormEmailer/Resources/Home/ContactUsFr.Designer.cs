@@ -22,14 +22,14 @@ namespace ContactFormEmailer.Web.Resources.Home {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ContactUs {
+    public class ContactUsFr {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ContactUs() {
+        internal ContactUsFr() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ContactFormEmailer.Web.Resources.Home.ContactUs", typeof(ContactUs).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ContactFormEmailer.Web.Resources.Home.ContactUsFr", typeof(ContactUsFr).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to City.
+        ///   Looks up a localized string similar to Ville.
         /// </summary>
         public static string City {
             get {
@@ -70,7 +70,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to City is a required field..
+        ///   Looks up a localized string similar to Ville est une cellule obligatoire..
         /// </summary>
         public static string CityRequired {
             get {
@@ -79,7 +79,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Confirm Email address.
+        ///   Looks up a localized string similar to Confirmez l’adresse courriel.
         /// </summary>
         public static string ConfirmEmailAddress {
             get {
@@ -106,7 +106,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email address.
+        ///   Looks up a localized string similar to Adresse courriel.
         /// </summary>
         public static string EmailAddress {
             get {
@@ -115,7 +115,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email addresses provided do not match..
+        ///   Looks up a localized string similar to Les courriels fournis ne correspondent pas..
         /// </summary>
         public static string EmailAddressMatch {
             get {
@@ -124,7 +124,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email address is a required field..
+        ///   Looks up a localized string similar to Courriel est une cellule obligatoire..
         /// </summary>
         public static string EmailAddressRequired {
             get {
@@ -142,7 +142,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Message is a required field..
+        ///   Looks up a localized string similar to Message est un champ obligatoire..
         /// </summary>
         public static string MessageRequired {
             get {
@@ -151,7 +151,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mobile number.
+        ///   Looks up a localized string similar to Numéro du sans-fil.
         /// </summary>
         public static string MobileNumber {
             get {
@@ -160,7 +160,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mobile number is a required field..
+        ///   Looks up a localized string similar to Numéro du sans-fil est un champ obligatoire..
         /// </summary>
         public static string MobileNumberRequired {
             get {
@@ -169,7 +169,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to Nom.
         /// </summary>
         public static string Name {
             get {
@@ -178,7 +178,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name is a required field..
+        ///   Looks up a localized string similar to Nom est une cellule obligatoire..
         /// </summary>
         public static string NameRequired {
             get {
@@ -187,7 +187,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reason for message.
+        ///   Looks up a localized string similar to Raison du message.
         /// </summary>
         public static string ReasonForMessage {
             get {
@@ -205,7 +205,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to *Required fields.
+        ///   Looks up a localized string similar to Les champs marqué d’une * sont obligatoires..
         /// </summary>
         public static string RequiredFields {
             get {
@@ -214,7 +214,7 @@ namespace ContactFormEmailer.Web.Resources.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Send Message.
+        ///   Looks up a localized string similar to Envoyer le message.
         /// </summary>
         public static string SendMessage {
             get {

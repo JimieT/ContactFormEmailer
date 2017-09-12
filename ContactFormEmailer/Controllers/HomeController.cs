@@ -66,5 +66,40 @@ namespace ContactFormEmailer.Web.Controllers
             ModelState.AddModelError(string.Empty, Resources.Home.ContactUs.ContactUsSubmitFailure);
             return View(MVC.Home.Views.ContactUs, viewModel);
         }
+
+        [HttpGet]
+        public virtual ActionResult ContactUsFr()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        [HttpPost]
+        public virtual ActionResult ContactUsFr(ContactUsFrViewModel viewModel)
+        {
+            if (viewModel.ContactUsFrInfo != null)
+            {
+                if (ModelState.IsValid)
+                {
+                    var emailSender = new EmailSender();
+                    emailSender.Send(viewModel.ContactUsFrInfo);
+                    return View();
+                }
+            }
+            viewModel.ContactUsFrInfo = new ContactUsFrInfo
+            {
+                City = string.Empty,
+                ConfirmEmailAddress = string.Empty,
+                EmailAddress = string.Empty,
+                Message = string.Empty,
+                Name = string.Empty,
+                MobileNumber = string.Empty,
+                ReasonForMessage = string.Empty
+            };
+            TryValidateModel(viewModel.ContactUsFrInfo, viewModel.ContactUsFrInfo.GetType().Name);
+            ModelState.AddModelError(string.Empty, Resources.Home.ContactUsFr.ContactUsSubmitFailure);
+            return View(MVC.Home.Views.ContactUsFr, viewModel);
+        }
     }
 }

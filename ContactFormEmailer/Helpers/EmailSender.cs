@@ -32,7 +32,7 @@ namespace ContactFormEmailer.Web.Helpers
             RestClient.BaseUrl = new Uri(ConfigurationManager.AppSettings["SendGridURI"]);
         }
 
-        public void Send(ContactUsInfo contactInfo)
+        public void Send(dynamic contactInfo)
         {
             var request = new RestRequest
             {
@@ -47,7 +47,7 @@ namespace ContactFormEmailer.Web.Helpers
             var response = RestClient.Execute(request);
         }
 
-        private static SendGridRequest GenerateSendGridRequest(ContactUsInfo contactInfo)
+        private static SendGridRequest GenerateSendGridRequest(dynamic contactInfo)
         {
             var sendGridRequest = new SendGridRequest
             {

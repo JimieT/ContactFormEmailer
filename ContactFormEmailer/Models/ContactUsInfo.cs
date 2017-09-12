@@ -23,15 +23,13 @@ namespace ContactFormEmailer.Web.Models
         public string MobileNumber { get; set; }
 
         [Required(ErrorMessageResourceName = "EmailAddressRequired", ErrorMessageResourceType = typeof(Resources.Home.ContactUs))]
-        [RegularExpression(".+\\@.+\\..+", ErrorMessageResourceName = "EmailAddressInvalid", ErrorMessageResourceType = typeof(Resources.Home.ContactUs))]
         public string EmailAddress { get; set; }
 
-        [Required(ErrorMessageResourceName = "EmailAddressRequired", ErrorMessageResourceType = typeof(Resources.Home.ContactUs))]
+        [System.ComponentModel.DataAnnotations.Compare("EmailAddress", ErrorMessageResourceName = "EmailAddressMatch", ErrorMessageResourceType = typeof(Resources.Home.ContactUs))]
         public string ConfirmEmailAddress { get; set; }
 
         [AllowHtml]
         [Required(ErrorMessageResourceName = "MessageRequired", ErrorMessageResourceType = typeof(Resources.Home.ContactUs))]
-        [NoUrlValidation(ErrorMessageResourceName = "MessageInvalid", ErrorMessageResourceType = typeof(Resources.Home.ContactUs))]
         public string Message { get; set; }
     }
 }

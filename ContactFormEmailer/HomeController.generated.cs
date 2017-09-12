@@ -75,6 +75,7 @@ namespace ContactFormEmailer.Web.Controllers
             public readonly string Index = "Index";
             public readonly string About = "About";
             public readonly string ContactUs = "ContactUs";
+            public readonly string ContactUsFr = "ContactUsFr";
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -83,6 +84,7 @@ namespace ContactFormEmailer.Web.Controllers
             public const string Index = "Index";
             public const string About = "About";
             public const string ContactUs = "ContactUs";
+            public const string ContactUsFr = "ContactUsFr";
         }
 
 
@@ -91,6 +93,14 @@ namespace ContactFormEmailer.Web.Controllers
         public ActionParamsClass_ContactUs ContactUsParams { get { return s_params_ContactUs; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionParamsClass_ContactUs
+        {
+            public readonly string viewModel = "viewModel";
+        }
+        static readonly ActionParamsClass_ContactUsFr s_params_ContactUsFr = new ActionParamsClass_ContactUsFr();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_ContactUsFr ContactUsFrParams { get { return s_params_ContactUsFr; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_ContactUsFr
         {
             public readonly string viewModel = "viewModel";
         }
@@ -106,11 +116,15 @@ namespace ContactFormEmailer.Web.Controllers
             {
                 public readonly string About = "About";
                 public readonly string ContactUs = "ContactUs";
+                public readonly string ContactUsFr = "ContactUsFr";
                 public readonly string Index = "Index";
+                public readonly string ThankYou = "ThankYou";
             }
             public readonly string About = "~/Views/Home/About.cshtml";
             public readonly string ContactUs = "~/Views/Home/ContactUs.cshtml";
+            public readonly string ContactUsFr = "~/Views/Home/ContactUsFr.cshtml";
             public readonly string Index = "~/Views/Home/Index.cshtml";
+            public readonly string ThankYou = "~/Views/Home/ThankYou.cshtml";
         }
     }
 
@@ -161,6 +175,29 @@ namespace ContactFormEmailer.Web.Controllers
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ContactUs);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "viewModel", viewModel);
             ContactUsOverride(callInfo, viewModel);
+            return callInfo;
+        }
+
+        [NonAction]
+        partial void ContactUsFrOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        [NonAction]
+        public override System.Web.Mvc.ActionResult ContactUsFr()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ContactUsFr);
+            ContactUsFrOverride(callInfo);
+            return callInfo;
+        }
+
+        [NonAction]
+        partial void ContactUsFrOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, ContactFormEmailer.Web.Models.ContactUsFrViewModel viewModel);
+
+        [NonAction]
+        public override System.Web.Mvc.ActionResult ContactUsFr(ContactFormEmailer.Web.Models.ContactUsFrViewModel viewModel)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ContactUsFr);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "viewModel", viewModel);
+            ContactUsFrOverride(callInfo, viewModel);
             return callInfo;
         }
 

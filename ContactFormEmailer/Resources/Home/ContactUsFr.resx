@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="City" xml:space="preserve">
-    <value>City</value>
+    <value>Ville</value>
   </data>
   <data name="CityRequired" xml:space="preserve">
-    <value>City is a required field.</value>
+    <value>Ville est une cellule obligatoire.</value>
   </data>
   <data name="ConfirmEmailAddress" xml:space="preserve">
-    <value>Confirm Email address</value>
+    <value>Confirmez l’adresse courriel</value>
   </data>
   <data name="ContactUsEmailSubject" xml:space="preserve">
     <value>{SiteName} Website - Contact Form</value>
@@ -133,42 +133,42 @@
     <value>An error occurred while attempting to submit your Contact Us request. Please see below for more details.</value>
   </data>
   <data name="EmailAddress" xml:space="preserve">
-    <value>Email address</value>
+    <value>Adresse courriel</value>
   </data>
   <data name="EmailAddressMatch" xml:space="preserve">
-    <value>Email addresses provided do not match.</value>
+    <value>Les courriels fournis ne correspondent pas.</value>
   </data>
   <data name="EmailAddressRequired" xml:space="preserve">
-    <value>Email address is a required field.</value>
+    <value>Courriel est une cellule obligatoire.</value>
   </data>
   <data name="Message" xml:space="preserve">
     <value>Message</value>
   </data>
   <data name="MessageRequired" xml:space="preserve">
-    <value>Message is a required field.</value>
+    <value>Message est un champ obligatoire.</value>
   </data>
   <data name="MobileNumber" xml:space="preserve">
-    <value>Mobile number</value>
+    <value>Numéro du sans-fil</value>
   </data>
   <data name="MobileNumberRequired" xml:space="preserve">
-    <value>Mobile number is a required field.</value>
+    <value>Numéro du sans-fil est un champ obligatoire.</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>Nom</value>
   </data>
   <data name="NameRequired" xml:space="preserve">
-    <value>Name is a required field.</value>
+    <value>Nom est une cellule obligatoire.</value>
   </data>
   <data name="ReasonForMessage" xml:space="preserve">
-    <value>Reason for message</value>
+    <value>Raison du message</value>
   </data>
   <data name="ReasonForMessageRequired" xml:space="preserve">
     <value>Reason for message is a required field.</value>
   </data>
   <data name="RequiredFields" xml:space="preserve">
-    <value>*Required fields</value>
+    <value>Les champs marqué d’une * sont obligatoires.</value>
   </data>
   <data name="SendMessage" xml:space="preserve">
-    <value>Send Message</value>
+    <value>Envoyer le message</value>
   </data>
 </root>

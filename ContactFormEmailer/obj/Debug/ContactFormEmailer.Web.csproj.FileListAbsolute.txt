@@ -73,3 +73,4 @@ C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer\obj\Debug\Co
 C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer\bin\ContactFormEmailer.Transports.dll
 C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer\bin\ContactFormEmailer.Transports.pdb
 C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer\bin\RestSharp.xml
+C:\Users\jimie.tran\Documents\ContactFormEmailer\ContactFormEmailer\obj\Debug\ContactFormEmailer.Web.Resources.Home.ContactUsFr.resources
