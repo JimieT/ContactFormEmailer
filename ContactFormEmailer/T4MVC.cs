@@ -27,9 +27,7 @@ using T4MVC;
 [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
 public static partial class MVC
 {
-    public static ContactFormEmailer.Web.Controllers.AccountController Account = new ContactFormEmailer.Web.Controllers.T4MVC_AccountController();
     public static ContactFormEmailer.Web.Controllers.HomeController Home = new ContactFormEmailer.Web.Controllers.T4MVC_HomeController();
-    public static ContactFormEmailer.Web.Controllers.ManageController Manage = new ContactFormEmailer.Web.Controllers.T4MVC_ManageController();
     public static T4MVC.SharedController Shared = new T4MVC.SharedController();
 }
 

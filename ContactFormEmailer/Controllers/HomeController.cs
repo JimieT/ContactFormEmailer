@@ -25,13 +25,6 @@ namespace ContactFormEmailer.Web.Controllers
             return View();
         }
 
-        public virtual ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
         [HttpGet]
         public virtual ActionResult ContactUs()
         {
@@ -49,7 +42,7 @@ namespace ContactFormEmailer.Web.Controllers
                 {
                     var emailSender = new EmailSender();
                     emailSender.Send(viewModel.ContactUsInfo);
-                    return View();
+                    return View(MVC.Home.Views.ThankYou);
                 }
             }
             viewModel.ContactUsInfo = new ContactUsInfo
@@ -84,7 +77,7 @@ namespace ContactFormEmailer.Web.Controllers
                 {
                     var emailSender = new EmailSender();
                     emailSender.Send(viewModel.ContactUsFrInfo);
-                    return View();
+                    return View(MVC.Home.Views.ThankYouFr);
                 }
             }
             viewModel.ContactUsFrInfo = new ContactUsFrInfo

@@ -73,7 +73,6 @@ namespace ContactFormEmailer.Web.Controllers
         public class ActionNamesClass
         {
             public readonly string Index = "Index";
-            public readonly string About = "About";
             public readonly string ContactUs = "ContactUs";
             public readonly string ContactUsFr = "ContactUsFr";
         }
@@ -82,7 +81,6 @@ namespace ContactFormEmailer.Web.Controllers
         public class ActionNameConstants
         {
             public const string Index = "Index";
-            public const string About = "About";
             public const string ContactUs = "ContactUs";
             public const string ContactUsFr = "ContactUsFr";
         }
@@ -114,17 +112,17 @@ namespace ContactFormEmailer.Web.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
-                public readonly string About = "About";
                 public readonly string ContactUs = "ContactUs";
                 public readonly string ContactUsFr = "ContactUsFr";
                 public readonly string Index = "Index";
                 public readonly string ThankYou = "ThankYou";
+                public readonly string ThankYouFr = "ThankYouFr";
             }
-            public readonly string About = "~/Views/Home/About.cshtml";
             public readonly string ContactUs = "~/Views/Home/ContactUs.cshtml";
             public readonly string ContactUsFr = "~/Views/Home/ContactUsFr.cshtml";
             public readonly string Index = "~/Views/Home/Index.cshtml";
             public readonly string ThankYou = "~/Views/Home/ThankYou.cshtml";
+            public readonly string ThankYouFr = "~/Views/Home/ThankYouFr.cshtml";
         }
     }
 
@@ -141,17 +139,6 @@ namespace ContactFormEmailer.Web.Controllers
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Index);
             IndexOverride(callInfo);
-            return callInfo;
-        }
-
-        [NonAction]
-        partial void AboutOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
-
-        [NonAction]
-        public override System.Web.Mvc.ActionResult About()
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.About);
-            AboutOverride(callInfo);
             return callInfo;
         }
 
