@@ -14,6 +14,7 @@ namespace ContactFormEmailer.Web.Helpers
 {
     public class EmailSender : IEmailSender
     {
+        private static readonly string CompanyName = ConfigurationManager.AppSettings["CompanyName"];
         private static readonly string SendGridApiKey = ConfigurationManager.AppSettings["SendGridAPIKey"];
         private static readonly string SentFromEmailAddress = ConfigurationManager.AppSettings["SentFromEmailAddress"];
         private static readonly string SentFromName = ConfigurationManager.AppSettings["SentFromName"];
@@ -57,7 +58,8 @@ namespace ContactFormEmailer.Web.Helpers
                     {
                         Type = "text/html",
                         Value = "<html>" +
-                                "<p>The following was entered through WIRELESSWAVE.ca website:<p>" +
+                                "<p>The following was entered through " + CompanyName +
+                                " website:<p>" +
                                 "<p>Name: " + contactInfo.Name + "</p>" +
                                 "<p>City: " + contactInfo.City + "</p>" +
                                 "<p>Reason for Message: " + contactInfo.ReasonForMessage + "</p>" +
