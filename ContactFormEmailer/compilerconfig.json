@@ -50,5 +50,13 @@
   {
     "outputFile": "Content/Styles/styles.css",
     "inputFile": "Content/Styles/styles.less"
+  },
+  {
+    "outputFile": "Content/Styles/_nav.css",
+    "inputFile": "Content/Styles/_nav.less"
+  },
+  {
+    "outputFile": "Content/Styles/_phone-compare.css",
+    "inputFile": "Content/Styles/_phone-compare.less"
   }
 ]

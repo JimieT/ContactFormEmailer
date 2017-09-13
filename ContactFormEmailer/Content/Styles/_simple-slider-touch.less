@@ -3,31 +3,35 @@
 }
 
 .slider > .dragger {
-  background: #32a5db;
-  border: 1px solid #32a5db;
   width: 20px;
   height: 20px;
+
+  border: 1px solid #c5c5c5;
+  background: #780ade;
+
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
 
 .slider > .dragger:hover {
-  background: #000;
-  border: 1px solid #000;
+  background: #3c096b;
+  border: 1px solid #3c096b;
 }
 
 
 .slider > .track, .slider > .highlight-track {
-  background: #d5d5d5;
-  height: 6px;
-  border: 1px solid #d5d5d5;
+  background: #3c096b;
+  height: 2px;
 }
 
+@slider-highlight-track-gradient-top: #F6F6F6;
+@slider-highlight-track-gradient-bottom: #780ade;
+
 .slider > .highlight-track {
-	background-color: #A5D8EF;
-	background: -webkit-linear-gradient(top, #A5D8EF, #66BCE4);
-	background: -moz-linear-gradient(top, #A5D8EF, #66BCE4);
-	background: linear-gradient(top, #A5D8EF, #66BCE4);	
-	border-color: #66BCE4;
+    background-color: @slider-highlight-track-gradient-top;
+	background: -webkit-linear-gradient(top, @slider-highlight-track-gradient-top, @slider-highlight-track-gradient-bottom);
+	background: -moz-linear-gradient(top, @slider-highlight-track-gradient-top, @slider-highlight-track-gradient-bottom);
+	background: linear-gradient(top, @slider-highlight-track-gradient-top, @slider-highlight-track-gradient-bottom);	
+	border-color: @slider-highlight-track-gradient-top;
 }

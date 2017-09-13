@@ -218,14 +218,20 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro-text.svg" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro-thin.svg" />
+    <Content Include="Content\Fonts\oem\product-sans\ProductSans-Light.svg" />
+    <Content Include="Content\Fonts\oem\product-sans\ProductSans-Regular.svg" />
+    <Content Include="Content\Fonts\Ubuntu-Bold.svg" />
+    <Content Include="Content\Fonts\Ubuntu-BoldItalic.svg" />
+    <Content Include="Content\Fonts\Ubuntu-Italic.svg" />
+    <Content Include="Content\Fonts\Ubuntu-Light.svg" />
+    <Content Include="Content\Fonts\Ubuntu-LightItalic.svg" />
+    <Content Include="Content\Fonts\Ubuntu-Medium.svg" />
+    <Content Include="Content\Fonts\Ubuntu-MediumItalic.svg" />
+    <Content Include="Content\Fonts\Ubuntu-Regular.svg" />
     <Content Include="Content\Styles\styles.css" />
     <Content Include="Content\Styles\styles.min.css" />
-    <Content Include="Content\Styles\_bootstrap.css">
-      <DependentUpon>_bootstrap.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Styles\_bootstrap.min.css">
-      <DependentUpon>_bootstrap.css</DependentUpon>
-    </Content>
     <Content Include="Content\Styles\_carousel.css">
       <DependentUpon>_carousel.less</DependentUpon>
     </Content>
@@ -238,35 +244,11 @@
     <Content Include="Content\Styles\_carriers.min.css">
       <DependentUpon>_carriers.css</DependentUpon>
     </Content>
-    <Content Include="Content\Styles\_checkout.css">
-      <DependentUpon>_checkout.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Styles\_checkout.min.css">
-      <DependentUpon>_checkout.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Styles\_content-page.css">
-      <DependentUpon>_content-page.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Styles\_content-page.min.css">
-      <DependentUpon>_content-page.css</DependentUpon>
-    </Content>
     <Content Include="Content\Styles\_custom.css">
       <DependentUpon>_custom.less</DependentUpon>
     </Content>
     <Content Include="Content\Styles\_custom.min.css">
       <DependentUpon>_custom.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Styles\_jquery-ui.css">
-      <DependentUpon>_jquery-ui.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Styles\_jquery-ui.min.css">
-      <DependentUpon>_jquery-ui.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Styles\_location.css">
-      <DependentUpon>_location.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Styles\_location.min.css">
-      <DependentUpon>_location.css</DependentUpon>
     </Content>
     <Content Include="Content\Styles\_main.css">
       <DependentUpon>_main.less</DependentUpon>
@@ -274,11 +256,17 @@
     <Content Include="Content\Styles\_main.min.css">
       <DependentUpon>_main.css</DependentUpon>
     </Content>
-    <Content Include="Content\Styles\_oem.css">
-      <DependentUpon>_oem.less</DependentUpon>
+    <Content Include="Content\Styles\_nav.css">
+      <DependentUpon>_nav.less</DependentUpon>
     </Content>
-    <Content Include="Content\Styles\_oem.min.css">
-      <DependentUpon>_oem.css</DependentUpon>
+    <Content Include="Content\Styles\_nav.min.css">
+      <DependentUpon>_nav.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_phone-compare.css">
+      <DependentUpon>_phone-compare.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\_phone-compare.min.css">
+      <DependentUpon>_phone-compare.css</DependentUpon>
     </Content>
     <Content Include="Content\Styles\_rate.css">
       <DependentUpon>_rate.less</DependentUpon>
@@ -298,23 +286,62 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\Styles\styles.less" />
-    <Content Include="Content\Styles\_bootstrap.less" />
-    <Content Include="Content\Styles\_carousel.less" />
-    <Content Include="Content\Styles\_checkout.less" />
-    <Content Include="Content\Styles\_custom.less" />
-    <Content Include="Content\Styles\_jquery-ui.less" />
-    <Content Include="Content\Styles\_location.less" />
-    <Content Include="Content\Styles\_main.less" />
-    <Content Include="Content\Styles\_oem.less" />
-    <Content Include="Content\Styles\_rate.less" />
-    <Content Include="Content\Styles\_simple-slider-touch.less" />
-    <Content Include="Content\Styles\_carriers.less" />
-    <Content Include="Content\Styles\_content-page.less" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Content\Styles\styles.less" />
+    <Content Include="Content\Styles\_carousel.less" />
+    <Content Include="Content\Styles\_carriers.less" />
+    <Content Include="Content\Styles\_custom.less" />
+    <Content Include="Content\Styles\_location.less" />
+    <Content Include="Content\Styles\_main.less" />
+    <Content Include="Content\Styles\_nav.less" />
+    <Content Include="Content\Styles\_phone-compare.less" />
+    <Content Include="Content\Styles\_rate.less" />
+    <Content Include="Content\Styles\_simple-slider-touch.less" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro-text.eot" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro-text.woff" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro-text.woff2" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro-thin.eot" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro-thin.woff" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro-thin.woff2" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro_bold.ttf" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro_medium.ttf" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro_semibold.ttf" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro_text.ttf" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro_thin.ttf" />
+    <Content Include="Content\Fonts\oem\myriad_set_pro\myriad-set-pro_ultralight.ttf" />
+    <Content Include="Content\Fonts\oem\product-sans\ProductSans-Light.eot" />
+    <Content Include="Content\Fonts\oem\product-sans\ProductSans-Light.ttf" />
+    <Content Include="Content\Fonts\oem\product-sans\ProductSans-Light.woff" />
+    <Content Include="Content\Fonts\oem\product-sans\ProductSans-Regular.eot" />
+    <Content Include="Content\Fonts\oem\product-sans\ProductSans-Regular.ttf" />
+    <Content Include="Content\Fonts\oem\product-sans\ProductSans-Regular.woff" />
+    <Content Include="Content\Fonts\Ubuntu-Bold.eot" />
+    <Content Include="Content\Fonts\Ubuntu-Bold.ttf" />
+    <Content Include="Content\Fonts\Ubuntu-Bold.woff" />
+    <Content Include="Content\Fonts\Ubuntu-BoldItalic.eot" />
+    <Content Include="Content\Fonts\Ubuntu-BoldItalic.ttf" />
+    <Content Include="Content\Fonts\Ubuntu-BoldItalic.woff" />
+    <Content Include="Content\Fonts\Ubuntu-Italic.eot" />
+    <Content Include="Content\Fonts\Ubuntu-Italic.ttf" />
+    <Content Include="Content\Fonts\Ubuntu-Italic.woff" />
+    <Content Include="Content\Fonts\Ubuntu-Light.eot" />
+    <Content Include="Content\Fonts\Ubuntu-Light.ttf" />
+    <Content Include="Content\Fonts\Ubuntu-Light.woff" />
+    <Content Include="Content\Fonts\Ubuntu-LightItalic.eot" />
+    <Content Include="Content\Fonts\Ubuntu-LightItalic.ttf" />
+    <Content Include="Content\Fonts\Ubuntu-LightItalic.woff" />
+    <Content Include="Content\Fonts\Ubuntu-Medium.eot" />
+    <Content Include="Content\Fonts\Ubuntu-Medium.ttf" />
+    <Content Include="Content\Fonts\Ubuntu-Medium.woff" />
+    <Content Include="Content\Fonts\Ubuntu-MediumItalic.eot" />
+    <Content Include="Content\Fonts\Ubuntu-MediumItalic.ttf" />
+    <Content Include="Content\Fonts\Ubuntu-MediumItalic.woff" />
+    <Content Include="Content\Fonts\Ubuntu-Regular.eot" />
+    <Content Include="Content\Fonts\Ubuntu-Regular.ttf" />
+    <Content Include="Content\Fonts\Ubuntu-Regular.woff" />
     <None Include="Properties\PublishProfiles\WebWerkz.pubxml" />
     <None Include="Properties\PublishProfiles\WirelessWave.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

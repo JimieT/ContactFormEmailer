@@ -96,42 +96,113 @@ namespace Links
         public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
         public static readonly string bootstrap_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/bootstrap.min.css") ? Url("bootstrap.min.css") : Url("bootstrap.css");
         public static readonly string bootstrap_min_css = Url("bootstrap.min.css");
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class Fonts {
+            public const string UrlPath = "~/Content/Fonts";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(UrlPath); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public static class oem {
+                public const string UrlPath = "~/Content/Fonts/oem";
+                public static string Url() { return T4MVCHelpers.ProcessVirtualPath(UrlPath); }
+                public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
+                [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+                public static class myriad_set_pro {
+                    public const string UrlPath = "~/Content/Fonts/oem/myriad_set_pro";
+                    public static string Url() { return T4MVCHelpers.ProcessVirtualPath(UrlPath); }
+                    public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
+                    public static readonly string myriad_set_pro_text_eot = Url("myriad-set-pro-text.eot");
+                    public static readonly string myriad_set_pro_text_svg = Url("myriad-set-pro-text.svg");
+                    public static readonly string myriad_set_pro_text_woff = Url("myriad-set-pro-text.woff");
+                    public static readonly string myriad_set_pro_text_woff2 = Url("myriad-set-pro-text.woff2");
+                    public static readonly string myriad_set_pro_thin_eot = Url("myriad-set-pro-thin.eot");
+                    public static readonly string myriad_set_pro_thin_svg = Url("myriad-set-pro-thin.svg");
+                    public static readonly string myriad_set_pro_thin_woff = Url("myriad-set-pro-thin.woff");
+                    public static readonly string myriad_set_pro_thin_woff2 = Url("myriad-set-pro-thin.woff2");
+                    public static readonly string myriad_set_pro_bold_ttf = Url("myriad-set-pro_bold.ttf");
+                    public static readonly string myriad_set_pro_medium_ttf = Url("myriad-set-pro_medium.ttf");
+                    public static readonly string myriad_set_pro_semibold_ttf = Url("myriad-set-pro_semibold.ttf");
+                    public static readonly string myriad_set_pro_text_ttf = Url("myriad-set-pro_text.ttf");
+                    public static readonly string myriad_set_pro_thin_ttf = Url("myriad-set-pro_thin.ttf");
+                    public static readonly string myriad_set_pro_ultralight_ttf = Url("myriad-set-pro_ultralight.ttf");
+                }
+            
+                [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+                public static class product_sans {
+                    public const string UrlPath = "~/Content/Fonts/oem/product-sans";
+                    public static string Url() { return T4MVCHelpers.ProcessVirtualPath(UrlPath); }
+                    public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
+                    public static readonly string ProductSans_Light_eot = Url("ProductSans-Light.eot");
+                    public static readonly string ProductSans_Light_svg = Url("ProductSans-Light.svg");
+                    public static readonly string ProductSans_Light_ttf = Url("ProductSans-Light.ttf");
+                    public static readonly string ProductSans_Light_woff = Url("ProductSans-Light.woff");
+                    public static readonly string ProductSans_Regular_eot = Url("ProductSans-Regular.eot");
+                    public static readonly string ProductSans_Regular_svg = Url("ProductSans-Regular.svg");
+                    public static readonly string ProductSans_Regular_ttf = Url("ProductSans-Regular.ttf");
+                    public static readonly string ProductSans_Regular_woff = Url("ProductSans-Regular.woff");
+                }
+            
+            }
+        
+            public static readonly string Ubuntu_Bold_eot = Url("Ubuntu-Bold.eot");
+            public static readonly string Ubuntu_Bold_svg = Url("Ubuntu-Bold.svg");
+            public static readonly string Ubuntu_Bold_ttf = Url("Ubuntu-Bold.ttf");
+            public static readonly string Ubuntu_Bold_woff = Url("Ubuntu-Bold.woff");
+            public static readonly string Ubuntu_BoldItalic_eot = Url("Ubuntu-BoldItalic.eot");
+            public static readonly string Ubuntu_BoldItalic_svg = Url("Ubuntu-BoldItalic.svg");
+            public static readonly string Ubuntu_BoldItalic_ttf = Url("Ubuntu-BoldItalic.ttf");
+            public static readonly string Ubuntu_BoldItalic_woff = Url("Ubuntu-BoldItalic.woff");
+            public static readonly string Ubuntu_Italic_eot = Url("Ubuntu-Italic.eot");
+            public static readonly string Ubuntu_Italic_svg = Url("Ubuntu-Italic.svg");
+            public static readonly string Ubuntu_Italic_ttf = Url("Ubuntu-Italic.ttf");
+            public static readonly string Ubuntu_Italic_woff = Url("Ubuntu-Italic.woff");
+            public static readonly string Ubuntu_Light_eot = Url("Ubuntu-Light.eot");
+            public static readonly string Ubuntu_Light_svg = Url("Ubuntu-Light.svg");
+            public static readonly string Ubuntu_Light_ttf = Url("Ubuntu-Light.ttf");
+            public static readonly string Ubuntu_Light_woff = Url("Ubuntu-Light.woff");
+            public static readonly string Ubuntu_LightItalic_eot = Url("Ubuntu-LightItalic.eot");
+            public static readonly string Ubuntu_LightItalic_svg = Url("Ubuntu-LightItalic.svg");
+            public static readonly string Ubuntu_LightItalic_ttf = Url("Ubuntu-LightItalic.ttf");
+            public static readonly string Ubuntu_LightItalic_woff = Url("Ubuntu-LightItalic.woff");
+            public static readonly string Ubuntu_Medium_eot = Url("Ubuntu-Medium.eot");
+            public static readonly string Ubuntu_Medium_svg = Url("Ubuntu-Medium.svg");
+            public static readonly string Ubuntu_Medium_ttf = Url("Ubuntu-Medium.ttf");
+            public static readonly string Ubuntu_Medium_woff = Url("Ubuntu-Medium.woff");
+            public static readonly string Ubuntu_MediumItalic_eot = Url("Ubuntu-MediumItalic.eot");
+            public static readonly string Ubuntu_MediumItalic_svg = Url("Ubuntu-MediumItalic.svg");
+            public static readonly string Ubuntu_MediumItalic_ttf = Url("Ubuntu-MediumItalic.ttf");
+            public static readonly string Ubuntu_MediumItalic_woff = Url("Ubuntu-MediumItalic.woff");
+            public static readonly string Ubuntu_Regular_eot = Url("Ubuntu-Regular.eot");
+            public static readonly string Ubuntu_Regular_svg = Url("Ubuntu-Regular.svg");
+            public static readonly string Ubuntu_Regular_ttf = Url("Ubuntu-Regular.ttf");
+            public static readonly string Ubuntu_Regular_woff = Url("Ubuntu-Regular.woff");
+        }
+    
         public static readonly string Site_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/Site.min.css") ? Url("Site.min.css") : Url("Site.css");
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class Styles {
             public const string UrlPath = "~/Content/Styles";
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(UrlPath); }
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
-            public static readonly string _bootstrap_less = Url("_bootstrap.less");
-            public static readonly string _bootstrap_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_bootstrap.min.css") ? Url("_bootstrap.min.css") : Url("_bootstrap.css");
-            public static readonly string _bootstrap_min_css = Url("_bootstrap.min.css");
             public static readonly string _carousel_less = Url("_carousel.less");
             public static readonly string _carousel_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_carousel.min.css") ? Url("_carousel.min.css") : Url("_carousel.css");
             public static readonly string _carousel_min_css = Url("_carousel.min.css");
             public static readonly string _carriers_less = Url("_carriers.less");
             public static readonly string _carriers_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_carriers.min.css") ? Url("_carriers.min.css") : Url("_carriers.css");
             public static readonly string _carriers_min_css = Url("_carriers.min.css");
-            public static readonly string _checkout_less = Url("_checkout.less");
-            public static readonly string _checkout_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_checkout.min.css") ? Url("_checkout.min.css") : Url("_checkout.css");
-            public static readonly string _checkout_min_css = Url("_checkout.min.css");
-            public static readonly string _content_page_less = Url("_content-page.less");
-            public static readonly string _content_page_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_content-page.min.css") ? Url("_content-page.min.css") : Url("_content-page.css");
-            public static readonly string _content_page_min_css = Url("_content-page.min.css");
             public static readonly string _custom_less = Url("_custom.less");
             public static readonly string _custom_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_custom.min.css") ? Url("_custom.min.css") : Url("_custom.css");
             public static readonly string _custom_min_css = Url("_custom.min.css");
-            public static readonly string _jquery_ui_less = Url("_jquery-ui.less");
-            public static readonly string _jquery_ui_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_jquery-ui.min.css") ? Url("_jquery-ui.min.css") : Url("_jquery-ui.css");
-            public static readonly string _jquery_ui_min_css = Url("_jquery-ui.min.css");
             public static readonly string _location_less = Url("_location.less");
-            public static readonly string _location_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_location.min.css") ? Url("_location.min.css") : Url("_location.css");
-            public static readonly string _location_min_css = Url("_location.min.css");
             public static readonly string _main_less = Url("_main.less");
             public static readonly string _main_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_main.min.css") ? Url("_main.min.css") : Url("_main.css");
             public static readonly string _main_min_css = Url("_main.min.css");
-            public static readonly string _oem_less = Url("_oem.less");
-            public static readonly string _oem_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_oem.min.css") ? Url("_oem.min.css") : Url("_oem.css");
-            public static readonly string _oem_min_css = Url("_oem.min.css");
+            public static readonly string _nav_less = Url("_nav.less");
+            public static readonly string _nav_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_nav.min.css") ? Url("_nav.min.css") : Url("_nav.css");
+            public static readonly string _nav_min_css = Url("_nav.min.css");
+            public static readonly string _phone_compare_less = Url("_phone-compare.less");
+            public static readonly string _phone_compare_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_phone-compare.min.css") ? Url("_phone-compare.min.css") : Url("_phone-compare.css");
+            public static readonly string _phone_compare_min_css = Url("_phone-compare.min.css");
             public static readonly string _rate_less = Url("_rate.less");
             public static readonly string _rate_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/_rate.min.css") ? Url("_rate.min.css") : Url("_rate.css");
             public static readonly string _rate_min_css = Url("_rate.min.css");
@@ -170,6 +241,30 @@ namespace Links
         }
         public static partial class Content 
         {
+            public static partial class Fonts 
+            {
+                public static partial class oem 
+                {
+                    public static partial class myriad_set_pro 
+                    {
+                        public static class Assets
+                        {
+                        }
+                    }
+                    public static partial class product_sans 
+                    {
+                        public static class Assets
+                        {
+                        }
+                    }
+                    public static class Assets
+                    {
+                    }
+                }
+                public static class Assets
+                {
+                }
+            }
             public static partial class Styles 
             {
                 public static class Assets

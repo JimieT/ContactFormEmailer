@@ -1,44 +1,45 @@
 ﻿@model ContactFormEmailer.Web.Models.ContactUsFrViewModel
 
 <div class="cf-wrapper">
-@using (Html.BeginForm(MVC.Home.ActionNames.ContactUsFr, MVC.Home.Name, FormMethod.Post, new { @id = "contact-form", @name = "contact-form" }))
-{
-    <div class="col-sm-6 col-xs-12 no-padding">
-        <label for="cfname">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.Name*</label>
-        @Html.TextBoxFor(x => x.ContactUsFrInfo.Name, new { @id = "cfname", @maxlength = "100" })
-        @Html.ValidationMessageFor(x => x.ContactUsFrInfo.Name)
-    </div>
-    <div class="col-sm-6 col-xs-12 no-padding">
-        <label for="cfcity">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.City*</label>
-        @Html.TextBoxFor(x => x.ContactUsFrInfo.City, new { @id = "cfcity", @maxlength = "100" })
-        @Html.ValidationMessageFor(x => x.ContactUsFrInfo.City)
-    </div>
-    <div class="col-sm-6 col-xs-12 no-padding">
-        <label for="cfsubj">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.ReasonForMessage*</label>
-        @Html.TextBoxFor(x => x.ContactUsFrInfo.ReasonForMessage, new { @id = "cfsubj", @maxlength = "100" })
-        @Html.ValidationMessageFor(x => x.ContactUsFrInfo.ReasonForMessage)
-    </div>
-    <div class="col-sm-6 col-xs-12 no-padding">
-        <label for="cfphone">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.MobileNumber*</label>
-        @Html.TextBoxFor(x => x.ContactUsFrInfo.MobileNumber, new { @id = "cfphone", @maxlength = "100" })
-        @Html.ValidationMessageFor(x => x.ContactUsFrInfo.MobileNumber)
-    </div>
-    <div class="col-sm-6 col-xs-12 no-padding">
-        <label for="cfemail">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.EmailAddress*</label>
-        @Html.TextBoxFor(x => x.ContactUsFrInfo.EmailAddress, new { @id = "cfemail", @maxlength = "100" })
-        @Html.ValidationMessageFor(x => x.ContactUsFrInfo.EmailAddress)
-    </div>
-    <div class="col-sm-6 col-xs-12 no-padding">
-        <label for="cfemailc">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.ConfirmEmailAddress*</label>
-        @Html.TextBoxFor(x => x.ContactUsFrInfo.ConfirmEmailAddress, new { @id = "cfemailc", @maxlength = "100" })
-        @Html.ValidationMessageFor(x => x.ContactUsFrInfo.ConfirmEmailAddress)
-    </div>
-    <div class="clearfix"></div>
-    <div class="col-xs-12">
+    @using (Html.BeginForm(MVC.Home.ActionNames.ContactUsFr, MVC.Home.Name, FormMethod.Post, new { @id = "contact-form", @name = "contact-form" }))
+    {
+        <div class="col-md-6 col-xs-12">
+            <label for="cfname">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.Name*</label>
+            @Html.TextBoxFor(x => x.ContactUsFrInfo.Name, new { @id = "cfname", @maxlength = "100" })
+            @Html.ValidationMessageFor(x => x.ContactUsFrInfo.Name, null, new { @class = "has-error" })
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <label for="cfcity">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.City*</label>
+            @Html.TextBoxFor(x => x.ContactUsFrInfo.City, new { @id = "cfcity", @maxlength = "100" })
+            @Html.ValidationMessageFor(x => x.ContactUsFrInfo.City, null, new { @class = "has-error" })
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <label for="cfsubj">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.ReasonForMessage*</label>
+            @Html.TextBoxFor(x => x.ContactUsFrInfo.ReasonForMessage, new { @id = "cfsubj", @maxlength = "100" })
+            @Html.ValidationMessageFor(x => x.ContactUsFrInfo.ReasonForMessage, null, new { @class = "has-error" })
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <label for="cfphone">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.MobileNumber*</label>
+            @Html.TextBoxFor(x => x.ContactUsFrInfo.MobileNumber, new { @id = "cfphone", @maxlength = "100" })
+            @Html.ValidationMessageFor(x => x.ContactUsFrInfo.MobileNumber, null, new { @class = "has-error" })
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <label for="cfemail">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.EmailAddress*</label>
+            @Html.TextBoxFor(x => x.ContactUsFrInfo.EmailAddress, new { @id = "cfemail", @maxlength = "100" })
+            @Html.ValidationMessageFor(x => x.ContactUsFrInfo.EmailAddress, null, new { @class = "has-error" })
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <label for="cfemailc">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.ConfirmEmailAddress*</label>
+            @Html.TextBoxFor(x => x.ContactUsFrInfo.ConfirmEmailAddress, new { @id = "cfemailc", @maxlength = "100" })
+            @Html.ValidationMessageFor(x => x.ContactUsFrInfo.ConfirmEmailAddress, null, new { @class = "has-error" })
+        </div>
+        <div class="clearfix"></div>
         <label for="cfmsg">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.Message*</label>
         @Html.TextAreaFor(x => x.ContactUsFrInfo.Message, new { @id = "cfmsg", @rows = "6" })
-        @Html.ValidationMessageFor(x => x.ContactUsFrInfo.Message)
-    </div>
-    <p class="center-align"><button type="submit" class="ww-blue-btn">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.SendMessage <i class="fa fa-chevron-right"></i></button><span>@ContactFormEmailer.Web.Resources.Home.ContactUsFr.RequiredFields</span></p>
-}
+        @Html.ValidationMessageFor(x => x.ContactUsFrInfo.Message, null, new { @class = "has-error" })
+        <div class="text-center" style="margin-top: 40px;">
+            <button type="submit" class="btn btn-pink-round">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.SendMessage</button>
+            <p class="">@ContactFormEmailer.Web.Resources.Home.ContactUsFr.RequiredFields</p>
+        </div>
+    }
 </div><!--cf-wrapper-->

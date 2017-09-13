@@ -1,72 +1,32 @@
-﻿/* ------------- CARRIER NAVBAR ----------------- */
-.carrier-header-bg {
-  background-color: #cc0000;
-  height: 60px;
-  width: 100%;
-  border-bottom: none !important;
+﻿/* ------------- CARRIER General ----------------- */
+.carrier-content-body img {
+  max-width: 100%;
 }
-#bell-header-bg {
-  background-color: #0964a4;
-}
-#rogers-header-bg {
-  background-color: #e12344;
-}
-#virgin-header-bg {
-  background-color: #cc0000;
-}
-#chatr-header-bg {
-  background-color: #5d2894;
-}
-#fido-header-bg {
-  background-color: #FEE600;
-}
-#sasktel-header-bg {
-  background-color: #29567f;
-}
-.carrier-header-bg li {
-  display: inline-block;
-  padding-right: 40px;
-  padding-top: 19px;
-}
-.carrier-header-bg li a {
-  color: #fff;
-  font-size: 16px;
-  padding-bottom: 18px;
-}
-.carrier-header-bg li a:hover {
-  border-bottom: 3px solid #fff;
-  padding-bottom: 18px;
-  text-decoration: none;
-  transition: none;
-}
-.active-link {
-  text-decoration: none;
-  border-bottom: 3px solid #fff;
-  padding-bottom: 18px;
-}
-.carrier-header-logo {
-  height: 60px;
-  width: auto;
-  padding-top: 0px;
+.page-content.carrier-page .grey-bg {
+  padding-top: 30px;
 }
 .river-text-container {
   padding: 30px;
 }
+.river-oem {
+  margin: 30px 0px;
+}
 .river-header-text {
+  font-family: 'Ubuntu-Bold';
   font-size: 20px;
-  font-weight: 600;
   text-transform: uppercase;
   color: #000;
   padding: 0px;
   margin: 0px;
   padding-bottom: 10px;
 }
-.river-p-text {
+.carrier-content-body {
   font-size: 14px;
   text-align: justify !important;
 }
-.river-text-min-heightP {
-  min-height: 250px;
+.river-p-text {
+  font-size: 14px;
+  text-align: justify !important;
 }
 .river-img {
   height: 100%;
@@ -75,11 +35,19 @@
 .oem-cta {
   padding: 50px;
 }
+.oem-cta h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 .carrier-cta {
   padding: 20px 0 40px 0;
 }
 .fine-print-oem {
   padding-bottom: 30px;
+}
+.fine-print {
+  font-size: 11px;
+  color: #999;
 }
 .accessories-footer-wrapper {
   width: 100%;
@@ -88,7 +56,7 @@
   float: none;
 }
 .footer-oem-img {
-  background-image: url("/Views/Clients/18011-Glentel/WW/En/Content/Images/OEM/oem-footer-banner.png");
+  background-image: url("/Views/Clients/18011-Glentel/TB/En/Content/Images/OEM/samsung-wearables/accessories-footer.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,16 +64,24 @@
   height: 300px;
 }
 .accessories-footer-heading {
+  font-family: 'Ubuntu-Medium';
   color: #fff;
   font-size: 36px;
 }
 .accessories-footer-text {
   color: #fff;
   font-size: 18px;
-  width: 100%;
 }
 .accessories-footer-text-spacer {
   padding: 65px 0px;
+}
+.accessories-footer-text-spacer a.btn.btn-white.center-block {
+  display: block !important;
+  width: 260px;
+  margin-bottom: 10px;
+}
+.accessories-footer-text-spacer .banner-btn-wrap {
+  margin-top: 30px;
 }
 .accessories-footer-text-spacer-promo {
   padding: 40px 0px;
@@ -118,20 +94,76 @@
   width: auto;
   margin-bottom: 20px;
 }
-.show-desktop {
-  display: block;
+img {
+  max-width: 100%;
 }
-.show-mobile {
-  display: none;
+.carrier-sub-nav .navbar-header.samsung-subnav img {
+  width: 120px;
+  margin-left: 60px;
+  margin-right: 40px;
 }
-.carrier-nav-show-desktop {
-  display: block;
+.carrier-sub-nav .navbar-header.lg-subnav img {
+  width: 70px;
+  margin-left: 50px;
+  margin-right: 40px;
+  margin-top: -4px;
 }
-.carrier-nav-show-mobile {
-  display: none;
+.river-text-container .btn-pink-round {
+  padding: 7px 13px;
 }
-hidden {
-  display: none;
+.page-content.carrier-page .river-oem {
+  margin: 0px;
+}
+.page-content.carrier-page {
+  margin: 0px;
+}
+.carrier-content-body {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.carrier-content-body .col-content {
+  text-align: left;
+}
+.carrier-content-body .col-content h3 {
+  text-transform: none;
+  color: #d61785;
+  letter-spacing: normal;
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Ubuntu-Light';
+}
+.carrier-content-body .col-content .col-content-icon {
+  margin: 30px 0px 25px;
+}
+.carrier-content-body .col-content .col-content-icon img {
+  margin: 0px;
+}
+.carrier-content-terms p {
+  font-family: 'PT Sans', helvetica, arial, sans-serif;
+  margin: 50px 0px 100px;
+}
+.carrier-content-terms a {
+  font-size: 24px;
+  color: #111;
+}
+.carrier-content-body .content-btn {
+  margin: 50px 0px;
+}
+.carrier-section p {
+  margin-bottom: 40px;
+}
+.carrier-section img {
+  width: 100%;
+}
+.carrier-section h2 {
+  color: #d61785;
+  margin-top: 40px;
+  font-size: 20px;
+}
+@media (max-width: 1150px) and (min-width: 990px) {
+  .carrier-section h2 {
+    margin-top: 18px;
+  }
 }
 /* ============== CARRIERS GENERAL ============== */
 .carriers-footer-wrapper {
@@ -151,27 +183,13 @@ hidden {
   font-size: 24px;
   color: #111;
 }
-.carrier-business-dropdown {
-  font-size: 12px;
-  padding-bottom: 6px;
-  padding-left: 10px;
-}
-.carrier-business-dropdown-text {
-  font-size: 18px !important;
-  color: #32a5db !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-}
-.carriers-footer-why-bell {
-  background-image: url("/Views/Clients/18011-Glentel/WW/En/Content/Images/carriers/carriers-footer-banner.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-}
-.carriers-footer-why-rogers {
-  background-image: url("/Views/Clients/18011-Glentel/WW/En/Content/Images/carriers/carriers-footer-banner.png");
+.carriers-footer-why-bell,
+.carriers-footer-why-rogers,
+.carriers-footer-why-fido,
+.carriers-footer-why-sasktel,
+.carriers-footer-why-chatr {
+  background-image: url("/Views/Clients/18011-Glentel/TB/En/Content/Images/carriers/carrier-footer-bg.jpg");
+  background-color: #ccc;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,52 +197,17 @@ hidden {
   height: 300px;
 }
 .carriers-footer-why-virgin {
-  background-image: url("/Views/Clients/18011-Glentel/WW/En/Content/Images/carriers/virgin-landing/virgin-footer-banner.png");
+  background-image: url("/Views/Clients/18011-Glentel/TB/En/Content/Images/carriers/virgin-landing/virgin-footer-banner.png");
+  background-color: #ccc;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 300px;
 }
-.carriers-footer-why-fido {
-  background-image: url("/Views/Clients/18011-Glentel/WW/En/Content/Images/carriers/carriers-footer-banner.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-}
-.carriers-footer-why-sasktel {
-  background-image: url("/Views/Clients/18011-Glentel/WW/En/Content/Images/carriers/carriers-footer-banner.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-}
-.carriers-footer-why-chatr {
-  background-image: url("/Views/Clients/18011-Glentel/WW/En/Content/Images/carriers/carriers-footer-banner.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-}
-.carriers-footer-why-rogers {
-  background-image: url("/Views/Clients/18011-Glentel/WW/En/Content/Images/carriers/carriers-footer-banner.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-}
-.carriers-footer-rogers-promo {
-  background-image: url("/Views/Clients/18011-Glentel/WW/En/Content/Images/carriers/rogers-landing/carriers-footer-banner.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
+.carriers-footer-why-virgin .accessories-footer-heading {
+  font-family: 'Ubuntu-Light';
+  margin-top: 60px;
 }
 .carrier-promo-heading {
   text-align: center;
@@ -239,25 +222,16 @@ hidden {
   width: 25px;
   padding-bottom: 10px;
 }
-/* ============== CARRIERS BELL - WHY BELL ============== */
-.carousel-indicators-bell li {
-  background-color: #ccc;
-}
-.carousel-indicators li.active {
-  background-color: #32a5db;
-}
 /* ============== CARRIERS VIRGIN - WHY VIRGIN ============== */
 .virgin-river-header-text {
-  font-family: Roboto Condensed, helvetica, arial, sans-serif;
+  font-family: 'Ubuntu', helvetica, arial, sans-serif;
+  font-weight: 300;
   font-size: 22px;
   color: #1f1f1f;
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-top: 20px;
+  text-transform: none;
 }
 .virgin-river-p-text {
-  font-family: Roboto Condensed, helvetica, arial, sans-serif;
+  font-family: 'Ubuntu', helvetica, arial, sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 14px;
@@ -270,54 +244,15 @@ hidden {
   display: block;
   margin-bottom: 10px;
 }
-.ww-virgin-white-btn {
-  background: #fff;
-  color: #000;
-  border: none;
-  padding: 9px 30px;
-  margin: 25px auto;
-  width: 200px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 50px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  display: block;
-}
-.ww-virgin-white-btn i {
-  font-size: 12px;
-  opacity: 0.5;
-  padding-left: 5px;
-}
-.ww-virgin-white-btn:hover {
-  background: #930000;
-  color: #000;
-}
-.ww-virgin-white-btn:hover i {
-  opacity: 1;
-}
-.ww-virgin-white-btn {
-  font-family: Roboto Condensed, helvetica, arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  font-size: 12px;
-  color: #646464;
-  cursor: pointer;
-}
 .virgin-accessories-footer-heading {
-  font-family: Roboto Condensed, helvetica, arial, sans-serif;
+  font-family: 'Ubuntu', helvetica, arial, sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 36px;
   color: #fff;
-  padding-top: 30px;
 }
 .virgin-accessories-footer-text {
-  font-family: Roboto Condensed, helvetica, arial, sans-serif;
+  font-family: 'Ubuntu', helvetica, arial, sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 16px;
@@ -328,12 +263,6 @@ hidden {
   height: 200px;
   width: auto;
   margin: 20px auto;
-  display: block;
-}
-.chatr-river-img2 {
-  height: 100px;
-  width: auto;
-  margin: 20px 0px;
   display: block;
 }
 .river-text-container-chatr {
@@ -364,72 +293,10 @@ hidden {
   width: 75px;
   padding-bottom: 10px;
 }
-/* ============== CARRIERS FIDO - GENERAL NAV BAR ============== */
-#fido-nav-text-color {
-  color: #0d0d0d;
-}
 /* --------------------------------------
     MEDIA
    -------------------------------------- */
 @media screen and (max-width: 991px) {
-  /* ============== CARRIER NAVBAR MOBILE ============== */
-  .dropdown-carrier {
-    width: 100%;
-    height: auto;
-    padding-top: 0px;
-    background-color: transparent;
-    color: #fff;
-    font-size: 18px;
-    font-family: Roboto Condensed: 400;
-    border: none;
-    padding-left: 40px;
-    margin-bottom: -2px;
-  }
-  .carrier-header-bg .container {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .carrier-header-bg .dropdown-menu {
-    margin-top: 0px;
-    width: 100%;
-    background-color: #2d2b27;
-    padding-left: 0px;
-    padding-right: 0px;
-    border-radius: 0px;
-    border: none;
-  }
-  .carrier-header-bg .fa-chevron-down {
-    font-size: 16px;
-    padding-top: 20px;
-    padding-right: 15px;
-  }
-  .carrier-header-bg li {
-    display: block;
-    padding-right: 0px;
-    padding-top: 0px;
-  }
-  .carrier-header-bg li a {
-    color: #fff;
-    font-size: 16px;
-    padding: 18px 0;
-    text-align: center;
-    font-family: Roboto Condensed: 400;
-    margin: 0 10px;
-    border-bottom: none;
-  }
-  .carrier-header-bg li a:hover {
-    text-decoration: none;
-    border-bottom: none;
-    transition: none;
-  }
-  .dropdown-spacer-lines-carrier {
-    border-bottom: 1px solid #4c4947 !important;
-  }
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    background-color: transparent !important;
-    color: #585653 !important;
-  }
   .river-carrier .container,
   .river-oem .img-col-padding {
     padding-left: 0px !important;
@@ -437,20 +304,6 @@ hidden {
   }
   .carrier-cta {
     padding: 10px 0 50px 0;
-  }
-  .carrier-header-logo {
-    height: 60px;
-    width: auto;
-    padding-top: 0px;
-  }
-  .carrier-nav-show-desktop {
-    display: none;
-  }
-  .carrier-nav-show-mobile {
-    display: block;
-  }
-  .active-link {
-    text-decoration: underline;
   }
 }
 @media screen and (max-width: 767px) {
@@ -460,16 +313,12 @@ hidden {
     margin-top: 0px;
   }
   .accessories-footer-text-spacer {
-    padding: 60px 0px;
-  }
-  .river-text-min-heightP {
-    min-height: 50px;
+    text-align: center;
+    padding: 40px 0px;
   }
   /* ============== CARRIERS VIRGIN - WHY VIRGIN ============== */
   .virgin-accessories-footer-heading {
     text-align: center;
-    padding-top: 0px;
-    margin-top: 0px;
   }
   /* ============== CARRIERS CHATR - WHY CHATR ============== */
   .chatr-river-img {
@@ -499,5 +348,10 @@ hidden {
   }
   .center-carrier-text {
     text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .accessories-footer-text {
+    display: none;
   }
 }
