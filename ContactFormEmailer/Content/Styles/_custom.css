@@ -7,23 +7,23 @@
 }
 @font-face {
   font-family: 'Ubuntu-Regular';
-  src: url('/Content/Fonts/Ubuntu-Regular.eot');
+  src: url('../Fonts/Ubuntu-Regular.eot');
   /* IE9 Compat Modes */
-  src: url('/Content/Fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/Content/Fonts/Ubuntu-Regular.woff') format('woff'), /* Modern Browsers */ url('/Content/Fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
+  src: url('../Fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../Fonts/Ubuntu-Regular.woff') format('woff'), /* Modern Browsers */ url('../Fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
   /* Legacy iOS */
 }
 @font-face {
   font-family: 'Ubuntu-Medium';
-  src: url('/Content/Fonts/Ubuntu-Medium.eot');
+  src: url('../Fonts/Ubuntu-Medium.eot');
   /* IE9 Compat Modes */
-  src: url('/Content/Fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/Content/Fonts/Ubuntu-Medium.woff') format('woff'), /* Modern Browsers */ url('/Content/Fonts/Ubuntu-Medium.ttf') format('ttf'), /* iOS */ url('/Content/Fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
+  src: url('../Fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../Fonts/Ubuntu-Medium.woff') format('woff'), /* Modern Browsers */ url('../Fonts/Ubuntu-Medium.ttf') format('ttf'), /* iOS */ url('../Fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
   /* Legacy iOS */
 }
 @font-face {
   font-family: 'Ubuntu-Bold';
-  src: url('/Content/Fonts/Ubuntu-Bold.eot');
+  src: url('../Fonts/Ubuntu-Bold.eot');
   /* IE9 Compat Modes */
-  src: url('/Content/Fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/Content/Fonts/Ubuntu-Bold.woff') format('woff'), /* Modern Browsers */ url('/Content/Fonts/Ubuntu-Bold.ttf') format('ttf'), /* iOS */ url('/Content/Fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+  src: url('../Fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../Fonts/Ubuntu-Bold.woff') format('woff'), /* Modern Browsers */ url('../Fonts/Ubuntu-Bold.ttf') format('ttf'), /* iOS */ url('../Fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
   /* Legacy iOS */
 }
 a.region-option {
