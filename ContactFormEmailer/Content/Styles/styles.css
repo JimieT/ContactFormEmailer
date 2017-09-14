@@ -4678,10 +4678,10 @@ CONTACT PAGE  ===
     padding-right: 0px !important;
   }
   .contact-us-form-desktop {
-    display: none !important;
+    display: none;
   }
   .contact-us-form-mobile {
-    display: block !important;
+    display: block;
   }
 }
 @media (max-width: 990px) {
