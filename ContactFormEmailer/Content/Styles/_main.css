@@ -140,10 +140,10 @@ select:focus,
   box-shadow: 0 0 1px #d61785;
 }
 .contact-us-form-mobile {
-  display: none !important;
+  display: none;
 }
 .contact-us-form-desktop {
-  display: block !important;
+  display: block;
 }
 /*BUTTONS
 */
