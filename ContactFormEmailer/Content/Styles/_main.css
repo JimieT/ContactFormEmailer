@@ -141,6 +141,12 @@ select:focus,
   border-color: #d61785;
   box-shadow: 0 0 1px #d61785;
 }
+.contact-us-form-mobile {
+  display: none !important;
+}
+.contact-us-form-desktop {
+  display: block !important;
+}
 /*BUTTONS
 */
 button:focus {
@@ -196,6 +202,7 @@ button:focus {
   display: inline-block !important;
   background: #d70485;
   color: #fff;
+  margin-top: 12px;
   padding: 12px 30px;
   border-radius: 22px;
   font-size: 11px;
@@ -3613,6 +3620,18 @@ CONTACT PAGE  ===
   padding-left: 12%;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .no-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .contact-us-form-desktop {
+    display: none !important;
+  }
+  .contact-us-form-mobile {
+    display: block !important;
+  }
+}
 @media (max-width: 990px) {
   .innerpage-hero-banner.hero-contact-page h1 {
     padding-top: 10%;
@@ -3655,6 +3674,7 @@ CONTACT PAGE  ===
   padding-left: 20px;
 }
 .cf-wrapper textarea {
+  width: 97.5%;
   margin-bottom: -5px;
 }
 /*

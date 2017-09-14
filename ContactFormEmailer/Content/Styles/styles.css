@@ -1274,6 +1274,12 @@ select:focus,
   border-color: #d61785;
   box-shadow: 0 0 1px #d61785;
 }
+.contact-us-form-mobile {
+  display: none !important;
+}
+.contact-us-form-desktop {
+  display: block !important;
+}
 /*BUTTONS
 */
 button:focus {
@@ -1329,6 +1335,7 @@ button:focus {
   display: inline-block !important;
   background: #d70485;
   color: #fff;
+  margin-top: 12px;
   padding: 12px 30px;
   border-radius: 22px;
   font-size: 11px;
@@ -4746,6 +4753,18 @@ CONTACT PAGE  ===
   padding-left: 12%;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .no-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .contact-us-form-desktop {
+    display: none !important;
+  }
+  .contact-us-form-mobile {
+    display: block !important;
+  }
+}
 @media (max-width: 990px) {
   .innerpage-hero-banner.hero-contact-page h1 {
     padding-top: 10%;
@@ -4788,6 +4807,7 @@ CONTACT PAGE  ===
   padding-left: 20px;
 }
 .cf-wrapper textarea {
+  width: 97.5%;
   margin-bottom: -5px;
 }
 /*
@@ -5702,30 +5722,30 @@ USER ACCOUNT  ===
    -------------------------------------- */
 @font-face {
   font-family: 'Ubuntu-Light';
-  src: url('/Content/Fonts/Ubuntu-Light.eot');
+  src: url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Light.eot');
   /* IE9 Compat Modes */
-  src: url('/Content/Fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/Content/Fonts/Ubuntu-Light.woff') format('woff'), /* Modern Browsers */ url('/Content/Fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+  src: url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Light.woff') format('woff'), /* Modern Browsers */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
   /* Legacy iOS */
 }
 @font-face {
   font-family: 'Ubuntu-Regular';
-  src: url('../Fonts/Ubuntu-Regular.eot');
+  src: url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Regular.eot');
   /* IE9 Compat Modes */
-  src: url('../Fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../Fonts/Ubuntu-Regular.woff') format('woff'), /* Modern Browsers */ url('../Fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
+  src: url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Regular.woff') format('woff'), /* Modern Browsers */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Regular.ttf') format('ttf'), /* iOS */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
   /* Legacy iOS */
 }
 @font-face {
   font-family: 'Ubuntu-Medium';
-  src: url('../Fonts/Ubuntu-Medium.eot');
+  src: url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Medium.eot');
   /* IE9 Compat Modes */
-  src: url('../Fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../Fonts/Ubuntu-Medium.woff') format('woff'), /* Modern Browsers */ url('../Fonts/Ubuntu-Medium.ttf') format('ttf'), /* iOS */ url('../Fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
+  src: url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Medium.woff') format('woff'), /* Modern Browsers */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Medium.ttf') format('ttf'), /* iOS */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
   /* Legacy iOS */
 }
 @font-face {
   font-family: 'Ubuntu-Bold';
-  src: url('../Fonts/Ubuntu-Bold.eot');
+  src: url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Bold.eot');
   /* IE9 Compat Modes */
-  src: url('../Fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../Fonts/Ubuntu-Bold.woff') format('woff'), /* Modern Browsers */ url('../Fonts/Ubuntu-Bold.ttf') format('ttf'), /* iOS */ url('../Fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+  src: url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Bold.woff') format('woff'), /* Modern Browsers */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Bold.ttf') format('ttf'), /* iOS */ url('/Views/Clients/18011-Glentel/TB/En/Content/Fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
   /* Legacy iOS */
 }
 a.region-option {
