@@ -139,6 +139,7 @@ blockquote {
 .ww-blue-btn {
   background: #32a5db;
   color: #fff;
+  margin-top: 5px;
   border: none;
   padding: 9px 30px;
   -moz-border-radius: 7px;
@@ -2975,17 +2976,17 @@ hr.light-line {
   display: block;
   text-transform: uppercase;
   color: #9ba3a7;
+  margin-top: 15px;
 }
 .cf-wrapper input,
 .cf-wrapper textarea {
-  width: 95%;
+  width: 100%;
   background: none !important;
   padding: 6px 10px;
   border: 1px solid #d3d3d3;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  margin-bottom: 15px;
 }
 .cf-wrapper input:focus,
 .cf-wrapper textarea:focus {
@@ -2993,6 +2994,7 @@ hr.light-line {
 }
 .cf-wrapper textarea {
   width: 97.5%;
+  margin-bottom: -5px;
 }
 .cf-wrapper .center-align span {
   font-family: 'Roboto Condensed', helvetica, arial, sans-serif;
