@@ -342,7 +342,7 @@
     <Content Include="Content\Fonts\Ubuntu-Regular.eot" />
     <Content Include="Content\Fonts\Ubuntu-Regular.ttf" />
     <Content Include="Content\Fonts\Ubuntu-Regular.woff" />
-    <None Include="Properties\PublishProfiles\WebWerkz.pubxml" />
+    <None Include="Properties\PublishProfiles\Tbooth.pubxml" />
     <None Include="Properties\PublishProfiles\WirelessWave.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

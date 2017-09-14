@@ -4787,6 +4787,9 @@ CONTACT PAGE  ===
   color: #888;
   padding-left: 20px;
 }
+.cf-wrapper textarea {
+  margin-bottom: -5px;
+}
 /*
 ================
 ABOUT PAGE  ===
