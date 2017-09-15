@@ -25,7 +25,7 @@ namespace ContactFormEmailer.Web.Models
         [Required(ErrorMessageResourceName = "EmailAddressRequired", ErrorMessageResourceType = typeof(Resources.Home.ContactUs))]
         public string EmailAddress { get; set; }
 
-        [System.ComponentModel.DataAnnotations.Compare("EmailAddress", ErrorMessageResourceName = "EmailAddressMatch", ErrorMessageResourceType = typeof(Resources.Home.ContactUs))]
+        [CaseInsensitiveCompare("EmailAddress", ErrorMessageResourceName = "EmailAddressMatch", ErrorMessageResourceType = typeof(Resources.Home.ContactUs))]
         public string ConfirmEmailAddress { get; set; }
 
         [AllowHtml]
